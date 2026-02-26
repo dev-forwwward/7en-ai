@@ -1,0 +1,54 @@
+/* Validation errors */
+form label.error {
+    font-size: 0.875rem;
+    position: absolute;
+    top: calc(100% + .25rem);
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease 0.3s, visibility 0s linear 0.3s;
+    color: var(--text-color--text-error);
+}
+
+form label.error.show {
+    opacity: 1;
+    visibility: visible;
+    transition: opacity 0.3s ease, visibility 0s linear 0s;
+}
+
+@media screen and (max-width: 480px) {
+    .email-example {
+        display: none;
+    }
+}
+
+/* Hide native checkbox */
+.s_cfo_form_row_checkbox input[type="checkbox"] {
+  -webkit-appearance: none;
+  appearance: none;
+  margin: 0;
+  font: inherit;
+  color: #1E1E1E;
+  width: 20px;
+  height: 20px;
+  border: 2px solid var(--base-color-neutral--neutral-darkest);
+  display: grid;
+  place-content: center;
+  cursor: pointer;
+  background-color: transparent;
+  transition: all 0.2s ease;
+}
+
+.s_cfo_form_row_checkbox input[type="checkbox"]::before {
+  content: "";
+  width: 10px;
+  height: 10px;
+  transform: scale(0);
+  transform-origin: bottom left;
+  transition: 120ms transform ease-in-out;
+  clip-path: polygon(14% 44%, 0 65%, 50% 100%, 100% 16%, 80% 0%, 43% 62%);
+  background-color: var(--base-color-neutral--neutral-darkest);
+}
+
+.s_cfo_form_row_checkbox input[type="checkbox"]:checked::before {
+  transform: scale(1);
+}

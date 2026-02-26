@@ -1,0 +1,12 @@
+/*
+*   AGENT PAGE
+*/
+.sms_word_text.countdown {
+    font-variant-numeric: tabular-nums;
+    font-feature-settings: "tnum";
+}
+
+.section_months_setup.height_extra {
+    /* Remove this if Countdown and months feature is enabled (ai-agent.js) */
+    height: auto;
+}
