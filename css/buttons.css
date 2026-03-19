@@ -1,0 +1,41 @@
+/*
+*   Links
+*/
+a:not(.button) {
+    transition: opacity 0.25s ease;
+}
+
+a:not(.button):hover {
+    opacity: .6;
+}
+
+/*
+*   Btn has-icon Hover
+*/
+.button.has-icon:hover .button-icon-list {
+    left: 0rem;
+}
+
+.button.has-icon.is-reversed:hover .button-icon-list-reversed {
+    left: -2.5rem;
+}
+
+/*
+*   Toggle Button
+*/
+.view_plans_btn_wrapper.content-hidden {
+    .toggle_button_icon_line_2 {
+        height: .5rem;
+    }
+}
+
+.pr_tb_head_wrapper_mobile.sticky {
+    opacity: 1;
+    transition: opacity .5s ease;
+}
+
+.view_plans_btn_wrapper.content-hidden + .pr_tb_head_wrapper_mobile.sticky {
+    opacity: 0;
+    position: fixed;
+    bottom: 0;
+}

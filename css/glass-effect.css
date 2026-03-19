@@ -1,0 +1,143 @@
+.button.has-glass,
+.wrapper-has-glass,
+.wrapper-has-glass-border {
+    backdrop-filter: blur(10px);
+
+    /* box-shadow: inset 1px 1px 1px 0 rgba(255, 255, 255, 0.5),
+                    inset -0.5px -0.5px .5px .5px rgba(255, 255, 255, 0.5) */
+    /* box-shadow: inset 1px 1px 1px -1px rgba(255, 255, 255, 0.5), 
+                inset -2px -2px 1px -1px rgba(255, 255, 255, 0.5); */
+
+    /* box-shadow: inset 1px 1px 1px -1px rgba(255, 255, 255, 1), 
+                inset -1px -1px 1px -1px rgba(255, 255, 255, 1); */
+
+    box-shadow: inset 1px 1px 1px -1px rgba(255, 255, 255, 1), 
+                inset -1px -1px 1px -1px rgba(255, 255, 255, 1),
+                inset 1px 1px 1px -1px rgba(255, 255, 255, 1),
+                inset -1px -1px 1px -1px rgba(255, 255, 255, 1);
+
+    overflow: hidden;
+}
+
+.img-has-border-glass,
+.elem-has-border-glass {
+    box-shadow: inset 1px 1px 1px -1px rgba(255, 255, 255, 1), 
+                inset -1px -1px 1px -1px rgba(255, 255, 255, 1),
+                inset 1px 1px 1px -1px rgba(255, 255, 255, 1),
+                inset -1px -1px 1px -1px rgba(255, 255, 255, 1);
+}
+
+.wrapper-has-glass:not(.padding-custom1)::before,
+.elem-has-border-glass:not(.padding-custom1)::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    -webkit-box-shadow: inset 12px 12px 25px -15px rgba(176,186,199,1); 
+    box-shadow: inset 12px 12px 25px -15px rgba(176,186,199,1);
+    z-index: -1;
+}
+
+.wrapper-has-glass:not(.padding-custom1)::after,
+.elem-has-border-glass:not(.padding-custom1)::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    -webkit-box-shadow: inset -8px -8px 34px -10px rgba(255,255,255,0.8); 
+    box-shadow: inset -8px -8px 34px -10px rgba(255,255,255,0.8);
+    z-index: -1;
+}
+
+.glass-dark.wrapper-has-glass:not(.padding-custom1)::before,
+.glass-dark.elem-has-border-glass:not(.padding-custom1)::before {
+    -webkit-box-shadow: inset 12px 12px 25px -15px rgba(0,0,0,.1); 
+    box-shadow: inset 12px 12px 25px -15px rgba(0,0,0,.1);
+}
+
+.glass-dark.wrapper-has-glass:not(.padding-custom1)::after,
+.glass-dark.elem-has-border-glass:not(.padding-custom1)::after {
+    opacity: .25;
+}
+
+.grid_custom_2.wrapper-has-glass:not(.padding-custom1)::before,
+.grid_custom_2.wrapper-has-glass:not(.padding-custom1)::after,
+.grid_custom_2 .wrapper-has-glass:not(.padding-custom1)::before,
+.grid_custom_2 .wrapper-has-glass:not(.padding-custom1)::after {
+    opacity: .5;
+}
+
+
+/*
+*   Swiper Bullet Glass
+*/
+.swiper-pagination-bullet.bullet,
+.bullet .bullet__ring,
+.bullets_swiper_dot {
+    box-shadow: inset 1px 1px 1px -1px rgba(255, 255, 255, 1), 
+                inset -1px -1px 1px -1px rgba(255, 255, 255, 1),
+                inset 1px 1px 1px -1px rgba(255, 255, 255, 1),
+                inset -1px -1px 1px -1px rgba(255, 255, 255, 1);
+
+    overflow: hidden;
+}
+
+.swiper-pagination-bullet.bullet::before,
+.bullet .bullet__ring::before,
+.bullets_swiper_dot::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    -webkit-box-shadow: inset 4px 11px 18px -4px rgba(176,186,199,1); 
+    box-shadow: inset 4px 11px 18px -4px rgba(176,186,199,1);
+    z-index: -1;
+}
+
+.swiper-pagination-bullet.bullet::after,
+.bullet .bullet__ring::after,
+.bullets_swiper_dot::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    -webkit-box-shadow: inset -8px -4px 12px -10px rgba(255,255,255,1); 
+    box-shadow: inset -8px 4px 12px -10px rgba(255,255,255,1);
+    z-index: -1;
+}
+
+
+/* .glass {
+    background: rgba(255, 255, 255, 0.1);
+    /* semi-transparent white 
+    backdrop-filter: blur(20px);
+    /* the actual glass blur 
+    -webkit-backdrop-filter: blur(20px);
+    /* Safari support 
+    border-radius: 16px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    /* optional depth 
+} */
+
+.orange-glass-overline {
+    position: relative;
+    overflow: visible;
+}
+
+.orange-glass-overline::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    top: -1px;
+    background: linear-gradient(90deg,rgba(255, 255, 255, 0) 0%, rgba(253, 108, 65, 1) 47%, rgba(255, 255, 255, 0) 100%);
+}
